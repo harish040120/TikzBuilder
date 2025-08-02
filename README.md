@@ -9,7 +9,7 @@
 
 **TikzBuilder** is an innovative AI-powered system developed during my **IBM SkillBuild Internship** conducted by **EduNet Foundation**. This project revolutionizes the way researchers and academics create professional diagrams by converting natural language instructions into clean, publication-ready **TikZ LaTeX code**.
 
-The system eliminates the manual complexity of diagram coding, enabling users to generate fully compilable TikZ diagrams through simple text descriptions or sketch inputs.
+The system eliminates the manual complexity of diagram coding, enabling users to generate fully compilable TikZ diagrams through simple text descriptions.
 
 ## 🚀 Technologies Used
 
@@ -27,28 +27,7 @@ The system eliminates the manual complexity of diagram coding, enabling users to
 - **Agent-Based Architecture**: Specialized AI agents for diagram generation
 
 ### Development Tools
-- **VS Code**: Development environment
-- **Git**: Version control
 - **IBM Cloud**: Cloud infrastructure and AI services
-
-## 🎥 Project Demonstration
-
-### Video Showcase
-
-#### Video 1: System Overview and Basic Functionality
-https://github.com/user-attachments/assets/8b5c8c7a-2a5b-4c97-9c8f-1e2d3f4a5b6c
-
-*Demonstrates the core functionality of converting natural language to TikZ diagrams*
-
-#### Video 2: Advanced Features and AI Agent Capabilities  
-https://github.com/user-attachments/assets/9a8c9e7f-3b4d-4e5f-6c1d-2f3a4b5c6d7e
-
-*Showcases advanced diagram generation and AI agent interactions*
-
-#### Video 3: Real-world Use Cases and Results
-https://github.com/user-attachments/assets/1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f
-
-*Demonstrates practical applications and publication-ready outputs*
 
 ## 🏗️ Architecture & Features
 
@@ -97,59 +76,6 @@ TikzBuilder/
     └── Vector Storage document.txt  # TikZ examples and documentation
 ```
 
-## 🛠️ Installation & Usage
-
-### Prerequisites
-```bash
-# LaTeX distribution (e.g., TeX Live, MiKTeX)
-# Python 3.8+
-# Required LaTeX packages: tikz, positioning, arrows.meta
-```
-
-### Quick Start
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/harish040120/TikzBuilder.git
-   cd TikzBuilder
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the AI agent**
-   ```python
-   # Example usage
-   from tikz_builder import TikzAgent
-   
-   agent = TikzAgent()
-   latex_code = agent.generate("Draw a simple block diagram with three connected nodes")
-   print(latex_code)
-   ```
-
-### Example Output
-```latex
-\documentclass{article}
-\usepackage{tikz}
-\usetikzlibrary{positioning}
-\begin{document}
-\begin{tikzpicture}[
-    roundnode/.style={circle, draw=green!60, fill=green!5, very thick, minimum size=7mm},
-    squarednode/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm},
-]
-%Nodes
-\node[squarednode]      (maintopic)                              {2};
-\node[roundnode]        (uppercircle)       [above=of maintopic] {1};
-\node[squarednode]      (rightsquare)       [right=of maintopic] {3};
-
-%Lines
-\draw[->] (uppercircle.south) -- (maintopic.north);
-\draw[->] (maintopic.east) -- (rightsquare.west);
-\end{tikzpicture}
-\end{document}
-```
-
 ## 🎓 Skills Acquired During IBM SkillBuild Internship
 
 Through this comprehensive internship program with **EduNet Foundation**, I gained expertise in:
@@ -170,8 +96,6 @@ Through this comprehensive internship program with **EduNet Foundation**, I gain
 ### Software Development & Engineering
 - **Python Programming**: Advanced backend development and AI integration
 - **LangChain Framework**: Building complex AI agent workflows
-- **Version Control**: Professional Git workflows and collaboration
-- **Documentation**: Creating comprehensive technical documentation
 - **Testing & Validation**: Ensuring AI system reliability and accuracy
 
 ### LaTeX & Technical Writing
@@ -186,14 +110,11 @@ Through this comprehensive internship program with **EduNet Foundation**, I gain
 - **Research Methodology**: Literature review and state-of-the-art analysis
 - **Professional Communication**: Technical writing and presentation skills
 
-## 🏆 Achievements & Certifications
+## 🏆 Certifications
 
-- ✅ **IBM SkillBuild Internship Completion** - EduNet Foundation
 - ✅ **Getting Started with Artificial Intelligence** - IBM Certification
 - ✅ **Journey to Cloud: Envisioning Your Solution** - IBM Certification  
 - ✅ **LangChain Laboratory** - Hands-on AI Framework Experience
-- ✅ **AI Agent Development** - Specialized system implementation
-- ✅ **Professional LaTeX Development** - Technical document creation
 
 ## 🔬 Research Impact & Applications
 
@@ -211,13 +132,6 @@ This project demonstrates practical applications in:
 - **Collaborative Features**: Multi-user diagram editing and sharing
 - **Advanced AI Models**: Integration with latest language models
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -230,7 +144,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Harish Kumar**
 - GitHub: [@harish040120](https://github.com/harish040120)
-- LinkedIn: [Harish Kumar](https://linkedin.com/in/harish040120)
+- LinkedIn: [Muthu Harish T](https://linkedin.com/in/harish040120)
 - Email: harish040120@gmail.com
 
 ---
